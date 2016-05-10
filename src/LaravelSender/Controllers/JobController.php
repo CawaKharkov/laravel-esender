@@ -33,6 +33,7 @@ class JobController extends Controller
 
         $path = storage_path('email/'.uniqid('job_',true));
         $from = $request->get('from');
+        $title = $request->get('title');
         $fromTitle = $request->get('fromTitle');
 
         if ($request->file('userlist')->isValid()) {
@@ -44,7 +45,7 @@ class JobController extends Controller
             $request->file('template')->move($path, 'email.html');
         }
 
-        $this->dispatch(new SendEmail($path,'cawa123@mail.ru','Sender'));
+        $this->dispatch(new SendEmail($path,$from,$fromTitle,$title));
         die();
     }
 }

@@ -59,7 +59,7 @@ class SendEmail extends Job implements ShouldQueue
 
             $mailer->send('laravel-sender::email.html', ['html' => $html],
                 function ($m) use ($user) {
-                    $m->from($this->from, $$this->fromTitle);
+                    $m->from($this->from, $this->fromTitle);
 
                     $m->to($user, null)->subject($this->title);
                 });

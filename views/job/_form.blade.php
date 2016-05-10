@@ -20,12 +20,20 @@
                    required="">
         </div>
     </div>
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="fromTitle">Sender title</label>
+        <div class="col-md-4">
+            <input id="fromTitle" name="fromTitle" type="text" placeholder="from" class="form-control input-md"
+                   required="">
+        </div>
+    </div>
 
     <!-- Text input-->
     <div class="form-group">
-        <label class="col-md-4 control-label" for="fromTitle">Email title</label>
+        <label class="col-md-4 control-label" for="title">Email title</label>
         <div class="col-md-4">
-            <input id="fromTitle" name="fromTitle" type="text" placeholder="title" class="form-control input-md"
+            <input id="title" name="title" type="text" placeholder="title" class="form-control input-md"
                    required="">
         </div>
     </div>
