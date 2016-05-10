@@ -1,0 +1,23 @@
+{
+  "name": "cawakharkov/laravel-sender",
+  "description": "Laravel package implementing email distribution",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aleksandr Zamiatin",
+      "email": "cawa123@mail.ru"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "laravel/framework": "5.1.*",
+    "illuminate/support": "5.1.*",
+    "phpexcel/phpexcel":"dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cawakharkov\\LaravelSender\\": "src/LaravelSender"
+    }
+  },
+  "minimum-stability": "dev"
+}
