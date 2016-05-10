@@ -29,8 +29,6 @@ class JobController extends Controller
 
     public function store(EmailJobRequest $request)
     {
-        dump($request->all());
-
         $path = storage_path('email/'.uniqid('job_',true));
         $from = $request->get('from');
         $title = $request->get('title');
@@ -46,6 +44,7 @@ class JobController extends Controller
         }
 
         $this->dispatch(new SendEmail($path,$from,$fromTitle,$title));
-        die();
+
+        return redirect()->route('sender.jobs.index');
     }
 }
