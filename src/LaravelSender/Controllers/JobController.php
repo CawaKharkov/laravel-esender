@@ -5,7 +5,7 @@ namespace CawaKharkov\LaravelSender\Controllers;
 
 use App\Http\Controllers\Controller;
 use CawaKharkov\LaravelSender\Jobs\SendEmail;
-use CawakHarkov\LaravelSender\Models\EmailJob;
+use CawaKharkov\LaravelSender\Models\EmailJob;
 use CawaKharkov\LaravelSender\Requests\EmailJobRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;

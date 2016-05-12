@@ -1,12 +1,12 @@
 <?php
 
-namespace CawakHarkov\LaravelSender\Models; 
+namespace CawaKharkov\LaravelSender\Models; 
 
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class EmailJob
- * @package CawakHarkov\LaravelSender\Models
+ * @package CawaKharkov\LaravelSender\Models
  */
 class EmailJob extends Model
 {
