@@ -4,6 +4,10 @@ namespace CawaKharkov\LaravelSender\Requests;
 
 use App\Http\Requests\Request;
 
+/**
+ * Class EmailJobRequest
+ * @package CawaKharkov\LaravelSender\Requests
+ */
 class EmailJobRequest extends Request
 {
 

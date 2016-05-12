@@ -5,6 +5,7 @@ namespace CawaKharkov\LaravelSender\Controllers;
 
 use App\Http\Controllers\Controller;
 use CawaKharkov\LaravelSender\Jobs\SendEmail;
+use CawakHarkov\LaravelSender\Models\EmailJob;
 use CawaKharkov\LaravelSender\Requests\EmailJobRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -18,7 +19,9 @@ class JobController extends Controller
 
     public function index()
     {
-        return view('laravel-sender::job.index');     
+        return view('laravel-sender::job.index', [
+            'jobs' => EmailJob::all()->paginate()
+        ]);
     }
 
     public function create()

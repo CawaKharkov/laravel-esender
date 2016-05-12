@@ -12,7 +12,19 @@ class CreateEmailJobTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('email_job', function (Blueprint $table) {
+
+            $table->increments('id');
+            $table->string('name');
+            $table->string('from');
+            $table->string('titleFrom');
+            $table->string('emailTitle');
+
+            $table->tinyInteger('progress')->default(0);
+            $table->boolean('finish')->default(false);
+
+            $table->timestamp();
+        });
     }
 
     /**
@@ -22,6 +34,6 @@ class CreateEmailJobTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('email_job');
     }
 }
