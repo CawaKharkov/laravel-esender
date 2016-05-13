@@ -20,7 +20,7 @@ class JobController extends Controller
     public function index()
     {
         return view('laravel-sender::job.index', [
-            'jobs' => EmailJob::all()->paginate()
+            'jobs' => EmailJob::paginate()
         ]);
     }
 

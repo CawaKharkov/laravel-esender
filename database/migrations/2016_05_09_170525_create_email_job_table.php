@@ -23,7 +23,7 @@ class CreateEmailJobTable extends Migration
             $table->tinyInteger('progress')->default(0);
             $table->boolean('finish')->default(false);
 
-            $table->timestamp();
+            $table->timestamps();
         });
     }
 
