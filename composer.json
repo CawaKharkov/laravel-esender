@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Cawakharkov\\LaravelSender\\": "src/LaravelSender"
+      "CawaKharkov\\LaravelSender\\": "src/LaravelSender"
     }
   },
   "minimum-stability": "dev"
